@@ -62,8 +62,7 @@ a {
 
 
 /* =========header-top======== */
-.header__top {
-}
+
 
 .header__top-inner {
   display: flex;
@@ -109,6 +108,20 @@ a {
   opacity: 0.7;
 }
 
+.logo {
+  outline: transparent;
+  border: 2px solid transparent ;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.logo:focus {
+  outline: transparent;
+  border: 2px solid #2352DE ;
+  border-radius: 5px;
+  padding: 1px;
+}
+
 /* =========header-top======== */
 
 /* =========header-content======== */
@@ -135,17 +148,25 @@ a {
 
 .header__link {
   display: block;
-  margin-bottom: 30px;
+  width: 170px;
+  margin:0 auto 30px;
+  padding: 5px;
   color: inherit;
   text-align: center;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
   border-bottom:  1px solid transparent;
+  outline: transparent;
 }
 
-.header__link:hover {
+.header__link span:hover {
   border-bottom:  1px solid #FFFFFF;
+}
+
+.header__link:focus {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 .header__img {
@@ -248,10 +269,13 @@ a {
 /* =========skills======== */
 
 /* =========services======== */
+.container .services__items {
+  margin-bottom: 140px;
+}
+
 .services__items {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 140px;
 }
 
 .services__item {
@@ -329,6 +353,21 @@ a {
   font-size: 24px;
   line-height: 38px;
   color: inherit;
+  outline: transparent;
+  padding: 2px;
+  border: 2px solid transparent;
+}
+
+.portfolio__link:hover {
+ color: #2352DE;
+ border-bottom: 1px solid #2352DE;
+}
+
+.portfolio__link:focus {
+ 
+ border: 2px solid #2352DE;
+ border-radius: 3px;
+ padding: 2px;
 }
 
 /* =========portfolio-top======== */
@@ -342,19 +381,25 @@ a {
 .portfolio__picture {
   margin-bottom: 45px;
 }
-.portfolio__img {
-}
+
 .portfolio__add {
   display: block;
   width: 183px;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 11px 23px;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
   color: #FFFFFF;
   background-color: #2352DE;
+  transition: all .5s;
+  border: 1px solid #2352DE;
+}
+
+.portfolio__add:hover {
+  color: #2352DE;
+  background-color: #FFFFFF;
 }
 /* =========portfolio-content======== */
 
