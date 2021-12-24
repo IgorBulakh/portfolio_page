@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- <link rel="stylesheet" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -60,7 +59,7 @@
               </h1>
 
               <a class="header__link" href=""
-                >смотреть работы
+                ><span>смотреть работы</span>
                 <img class="header__img" src="images/scrol.svg" alt="скрол" />
               </a>
             </div>
@@ -68,7 +67,7 @@
         </div>
       </header>
       <main class="body">
-        <section class="about">
+        <section class="section about">
           <div class="container">
             <h2 class="title">Обо мне</h2>
             <p class="about__text">
@@ -88,43 +87,42 @@
             </p>
           </div>
         </section>
-        <section class="skills">
+        <section class="section skills">
           <div class="container">
             <h2 class="title">Навыки</h2>
-            <div class="scills__inner">
+            <div class="skills__inner">
               <img class="avatar" src="images/avatar.JPG" alt="мой портрет" />
 
-              <!-- line--skills -->
-              <ul class="scills__items left">
-                <li class="scills__item">
-                  <p class="scills__text">HTML</p>
+              <ul class="skills__items left">
+                <li class="skills__item">
+                  <p class="skills__text">HTML</p>
                   <span
-                    class="scills__line"
+                    class="skills__line"
                     style="width: calc(100% - 90%)"
                   ></span>
-                  <div></div>
+                  <span class="skill__line--blue"></span>
                 </li>
-                <li class="scills__item">
-                  <p class="scills__text">CSS</p>
+                <li class="skills__item">
+                  <p class="skills__text">CSS</p>
                   <span
-                    class="scills__line"
+                    class="skills__line"
                     style="width: calc(100% - 80%)"
                   ></span>
-                  <div></div>
+                  <span class="skill__line--blue"></span>
                 </li>
-                <li class="scills__item">
-                  <p class="scills__text">JS</p>
+                <li class="skills__item">
+                  <p class="skills__text">JS</p>
                   <span
-                    class="scills__line"
+                    class="skills__line"
                     style="width: calc(100% - 60%)"
                   ></span>
-                  <div></div>
+                  <span class="skill__line--blue"></span>
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <section class="services">
+        <section class="section services">
           <div class="container">
             <h2 class="title">Услуги</h2>
             <ul class="services__items">
@@ -149,10 +147,6 @@
                 </p>
               </li>
             </ul>
-          </div>
-        </section>
-        <section class="portfolio">
-          <div class="container">
             <div class="portfolio__top">
               <h2 class="title">Мои работы</h2>
               <nav class="menu">
@@ -193,6 +187,26 @@
               </div>
             </div>
             <a class="portfolio__add">Загрузить еще</a>
+          </div>
+        </section>
+        <section class="section reviews">
+          <div class="container">
+            <h2 class="title">Отзывы клиентов</h2>
+            <div class="review__inner">
+              <div class="review__userpic">
+                <img class="review__img" src="images/zuker.jpg" alt="юзерпик" />
+                <span class="review__author">Марк Цукерберг</span>
+                <blockquote class="blockquote">
+                  Фантастика! Я всецело доволен работой этого специалиста.
+                  Быстро и качественно. Рекомендую!
+                </blockquote>
+              </div>
+              <div class="review__video">
+                <a class="video__link" href="">
+                  <img class="play__img" src="images/play.svg" alt="плей" />
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
