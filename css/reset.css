@@ -19,6 +19,7 @@ ul{
 
 a {
   text-decoration: none;
+  outline: transparent;
 }
 
 body,
@@ -51,5 +52,14 @@ button,
 textarea,
 select {
   font: inherit;
+  border: none;
+  outline: transparent;
 }
 
+button {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

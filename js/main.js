@@ -1,5 +1,5 @@
 $(function () {
-  var mixer = mixitup(".portfolio__content");
+  var mixer = mixitup(".gallery__content");
 
   animation: {
     duration: 700;
