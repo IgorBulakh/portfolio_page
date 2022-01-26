@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>портфолио</title>
+  <link rel="shortcut icon" href="images/favicon__logo.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon__logo.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
@@ -23,6 +25,10 @@
         <a class="logo" href="">
           <img class="logo__img" src="images/logo.svg" alt="логотип" />
         </a>
+        <button class="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only">Мобильное меню</span>
+        </button>
         <ul class="menu">
           <li class="menu__item">
             <a class="menu__link" href="#">Обо мне
@@ -52,8 +58,8 @@
       </nav>
       <div class="header__content-inner">
         <h1 class="header__title">
-          <span class="header__title-name">Привет, я Булах Игорь</span>
-          frontend- разработчик
+          Привет, я Булах Игорь
+          <span class="header__title-name">frontend-разработчик</span>
         </h1>
         <a class="header__link" href="#">смотреть работы</a>
       </div>
@@ -61,6 +67,7 @@
   </header>
   <!-- main -->
   <main>
+    <!-- about -->
     <section class="section about">
       <div class="container">
         <h2 class="title">Обо мне</h2>
@@ -83,6 +90,7 @@
         </div>
       </div>
     </section>
+    <!-- skills -->
     <section class="section skills">
       <div class="container">
         <h2 class="title">Навыки</h2>
@@ -111,6 +119,7 @@
         </div>
       </div>
     </section>
+    <!-- services -->
     <section class="section services">
       <div class="container">
         <h2 class="title">Услуги</h2>
@@ -139,7 +148,7 @@
       </div>
     </section>
     <!-- gallery -->
-    <section class="section gallery">
+    <!-- <section class="section gallery">
       <div class="container">
         <h2 class="title">Мои работы</h2>
         <ul class="gallery__items">
@@ -188,9 +197,9 @@
         <button class="button" type="button">Загрузить еще
         </button>
       </div>
-    </section>
+    </section> -->
     <!-- reviews -->
-    <section class="section review">
+    <!-- <section class="section review">
       <div class="container">
         <h2 class="title">Отзывы клиентов</h2>
         <div class="review__inner">
@@ -208,9 +217,9 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- statistics -->
-    <div class="statistic">
+    <!-- <div class="statistic">
       <div class="container">
         <ul class="statistic__list">
           <li class="statistic__item statistic__item--works">
@@ -231,9 +240,9 @@
           </li>
         </ul>
       </div>
-    </div>
-    <!-- contact -->
-    <section class="section contact">
+    </div> -->
+    <!-- contact-form -->
+    <!-- <section class="section contact">
       <div class="container">
         <h2 class="title">Контакты</h2>
         <div class="contact__box">
@@ -271,7 +280,7 @@
               </li>
             </ul>
           </address>
-          <!-- form -->
+
           <form class="form" action="#">
             <div class="form__inner">
               <label class="form__label">Ваше имя
@@ -281,24 +290,23 @@
                 <input class="form__input" type="tel" name="number" required placeholder="+380501111111" />
               </label>
             </div>
-            <label class="form__label">Ваше сообщение
-              <textarea class="form__input form__input--textarea" name="message"
-                placeholder="Текст вашего сообщения"></textarea>
+            <label class="form__label form__label--textarea">Ваше сообщение
+              <textarea class="form__input" name="message" placeholder="Текст вашего сообщения"></textarea>
             </label>
             <button class="button" type="submit">Отправить
             </button>
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <!-- footer -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <a class="logo" href="#">
       <img class="logo__img" src="images/logo.svg" alt="логотип" />
     </a>
-  </footer>
+  </footer> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/mixitup.min.js"></script>

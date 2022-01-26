@@ -1,6 +1,4 @@
 $(function () {
-  var mixer = mixitup(".gallery__content");
-
   animation: {
     duration: 700;
   }
@@ -11,4 +9,12 @@ $(function () {
   //   slidesToShow: 1,
   //   adaptiveHeight: true,
   // });
+
+  // mew-version_mobile-menu
+  $(".burger").on("click", function () {
+    $(".burger").toggleClass("burger--active");
+    $(".menu").toggleClass("menu__active");
+  });
+
+  var mixer = mixitup(".gallery__content");
 });
