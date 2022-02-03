@@ -10,7 +10,6 @@ $(function () {
   //   adaptiveHeight: true,
   // });
 
-  // mew-version_mobile-menu
   $(".burger").on("click", function () {
     $(".burger").toggleClass("burger--active");
     $(".menu").toggleClass("menu__active");
