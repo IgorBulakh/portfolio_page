@@ -33,6 +33,7 @@ body {
   bottom: 5px;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 .button {
@@ -85,7 +86,7 @@ body {
   background-size: cover;
   color: #FFFFFF;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .header::before {
@@ -101,11 +102,23 @@ body {
 
 /* =========header-top======== */
 .header__inner {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 75px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 99;
 }
+
+.header__inner.header__fixed {
+  padding: 35px 0;
+  background-color: rgba(35, 82, 222, 0.9);
+}
+
 
 .logo {
   transition: all 0.3s;
@@ -223,7 +236,9 @@ body {
 
 .header__content-inner {
   position: relative;
-  height: calc(100vh - 128px);
+  padding-top: 128px;
+  /* height: calc(100vh - 128px); */
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -265,7 +280,6 @@ body {
 .header__link::before {
   content: "";
   position: absolute;
-  /* top: 17px; */
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -363,6 +377,7 @@ body {
   max-width: 330px;
   padding-top: 90px;
   position: relative;
+  /* z-index: -1; */
 }
 
 .services__item::before {
@@ -376,7 +391,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 
 .services__item--dev::before {
   background-image: url('../images/group.svg');
@@ -626,12 +640,15 @@ body {
   line-height: 1.6;
 }
 
-.address__list {
+/* .address__list {
   margin-bottom: 20px;
-}
+} */
 
-.address__item:not(:last-child) {
+/* .address__item:not(:last-child) {
   margin-bottom: 15px;
+} */
+.address__item {
+  padding-bottom: 15px;
 }
 
 .address__link {
@@ -762,12 +779,12 @@ body {
   .review__inner {
     flex-direction: column;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
   }
 
   .review__box {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 59%;
+    margin-bottom: 60px;
   }
 
   .review__video {
@@ -782,7 +799,11 @@ body {
 
   .statistic__item {
     width: 48%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+  }
+
+  .statistic__item:not(:nth-child(n+3)) {
+      margin-bottom: 15px;
   }
 
   /* =========form======== */
@@ -814,12 +835,17 @@ body {
 
   .title {
     margin-bottom: 35px;
-    /* margin-bottom: 30px; */
     font-size: 28px;
   }
 
+  .title::after {
+    height: 10px;
+    bottom: 3px;
+  }
+
   .header__inner {
-    padding-top: 11px;
+    padding: 11px 15px 0;
+    justify-content: space-between;
   }
 
   .logo {
@@ -837,7 +863,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    /*bottom: 0;*/
     background-color: #7792E0;
     display: block;
     text-align: center;
@@ -849,6 +875,7 @@ body {
 
   .menu.menu__active {
     transform: translateY(0%);
+    padding-bottom: calc(100vh - 321px);
   }
 
   .menu__item:not(:last-child) {
@@ -871,8 +898,12 @@ body {
   }
 
   .header__content-inner {
-    height: calc(100vh - 52px);
+  
   }
+  .header__inner.header__fixed {
+    padding: 5px 15px;
+    background-color: rgba(35, 82, 222, 0.9);
+}
 
   .header__title {
     max-width: 100%;
@@ -962,10 +993,6 @@ body {
     grid-gap: 15px;
   }
 
-  .review__inner {
-    width: 75%;
-  }
-
 
   /* =========statistic======== */
   .statistic {
@@ -975,7 +1002,7 @@ body {
   /* =========form======== */
 
   .contact {
-    padding-top: 0;
+    padding-top: 12px;
   }
 
   .contact__box {
@@ -989,13 +1016,13 @@ body {
 
   .address {
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     padding: 0 230px;
     text-align: center;
   }
 
   .address__list {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .address__link {
@@ -1016,11 +1043,11 @@ body {
   }
 
   .form__label--textarea {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
   }
 
   .form__input {
-    margin-top: 15px;
+    margin-top: 14px;
     padding-top: 11px;
     padding-bottom: 11px;
   }
@@ -1033,9 +1060,9 @@ body {
 
 @media (max-width: 768px) { 
 
-  .header__content-inner {
+  /*.header__content-inner {
     height: calc(100vh - 60px);
-  }
+  }*/
 
   .header__title {
     font-size: 32px;
@@ -1074,11 +1101,16 @@ body {
   /* =========gallery======== */
   .gallery__items {
     display: block;
-    margin-bottom: 29px;
+    margin-bottom: 13px;
+  }
+
+  .gallery__item {
+    padding-bottom: 16px;
   }
 
   .gallery__item:not(:last-child) {
-    margin: 0 0 16px;
+    /* margin: 0 0 16px; */
+    margin: 0;
   }
 
   .gallery__btn {
@@ -1095,6 +1127,11 @@ body {
   .review__inner {
     width: 100%;
     position: relative;
+  }
+
+  .review__box {
+    width: 100%;
+    margin-bottom: 30px;
   }
 
 
