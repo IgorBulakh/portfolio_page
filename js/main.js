@@ -7,18 +7,6 @@ $(function () {
     $("body,html").animate({ scrollTop: top }, 1500);
   });
 
-  /* 
-  $(window).scroll(function () {
-    var heightScroll = $(window).offset().top;
-    
-    if (heightScroll > 100) {
-      $(".header__inner").addClass("header-fixed");
-    } else {
-      $(".header__inner").removeClass("header-fixed");
-    }
-  });  
-*/
-
   $(window).scroll(function () {
     var heightScroll = $(window).scrollTop();
 

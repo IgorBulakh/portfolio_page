@@ -119,7 +119,6 @@ body {
   background-color: rgba(35, 82, 222, 0.9);
 }
 
-
 .logo {
   transition: all 0.3s;
 }
@@ -237,7 +236,6 @@ body {
 .header__content-inner {
   position: relative;
   padding-top: 128px;
-  /* height: calc(100vh - 128px); */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -360,7 +358,6 @@ body {
   background-color: #DBDBED; 
 }
 
-
 .skills__line-color {
   display: block;
   height: 100%;
@@ -377,7 +374,6 @@ body {
   max-width: 330px;
   padding-top: 90px;
   position: relative;
-  /* z-index: -1; */
 }
 
 .services__item::before {
@@ -529,9 +525,11 @@ body {
   z-index: -1;
   transition: background-color 0.3s;
 }
+
 .review__video:hover::before {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .review__video:active::before {
   background-color: rgba(0, 0, 0, 0.45);
 }
@@ -599,12 +597,15 @@ body {
 .statistic__item--works:before {
   background-image: url('../images/works.svg');
 }
+
 .statistic__item--clients:before {
   background-image: url('../images/clients.svg');
 }
+
 .statistic__item--coffe:before {
   background-image: url('../images/coffee.svg');
 }
+
 .statistic__item--review:before {
   background-image: url('../images/review.svg');
 }
@@ -640,13 +641,6 @@ body {
   line-height: 1.6;
 }
 
-/* .address__list {
-  margin-bottom: 20px;
-} */
-
-/* .address__item:not(:last-child) {
-  margin-bottom: 15px;
-} */
 .address__item {
   padding-bottom: 15px;
 }
@@ -799,7 +793,6 @@ body {
 
   .statistic__item {
     width: 48%;
-    /* margin-bottom: 15px; */
   }
 
   .statistic__item:not(:nth-child(n+3)) {
@@ -863,7 +856,6 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    /*bottom: 0;*/
     background-color: #7792E0;
     display: block;
     text-align: center;
@@ -898,7 +890,7 @@ body {
   }
 
   .header__content-inner {
-  
+    padding-top: 52px;
   }
   .header__inner.header__fixed {
     padding: 5px 15px;
@@ -916,7 +908,7 @@ body {
   }
 
   .header__link {
-    margin-bottom: 11px;
+    margin-bottom: 16px;
     padding-bottom: 30px;
     font-size: 14px;
   }
@@ -1060,10 +1052,6 @@ body {
 
 @media (max-width: 768px) { 
 
-  /*.header__content-inner {
-    height: calc(100vh - 60px);
-  }*/
-
   .header__title {
     font-size: 32px;
   }
@@ -1109,7 +1097,6 @@ body {
   }
 
   .gallery__item:not(:last-child) {
-    /* margin: 0 0 16px; */
     margin: 0;
   }
 
